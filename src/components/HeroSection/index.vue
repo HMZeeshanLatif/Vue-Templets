@@ -1,21 +1,28 @@
 <script setup>
-import {reactive} from "vue";
- let count=reactive({
-  a:50,
-  b:20,
-  c:0
- })
+import {ref} from 'vue';
 
+let testRef=ref(
+  {
+    firstNamme:"Zeeshan",
+    mailing:{
+      recipents:["Talha"],
+      Adress:"Karachi sindh Pakistan"
+    },
+    otherInfo:["26","Job","Early"]
+  }
+)
 let fun=()=>{
-  count.c= count.a+count.b;
-  
+  testRef.value.otherInfo.push("Busines")
+  testRef.value.otherInfo.push("Start")
+  testRef.value.recipent2="Arman"
+  testRef.value.mailing.recipents.push("Zeeshan")
 }
-
 
 </script>
 <template>
-   <h1>{{count.a + count.c}}</h1>
-   <button  @click="fun()">click</button>
+   <h1>{{testRef.mailing.recipents[10]}}</h1>
+   <button @click="fun()">Click</button>
+   <button v-on:click="fun()">Click</button>
 </template>
 
 <style scoped></style>
