@@ -2,6 +2,7 @@
 import ResponsiveHeader from "./components/Responsiveheader/ResponsiveHeader.vue";
 import Footerss from "./components/Footerss/Footerss.vue";
 import HeroSection from "./components/HeroSection/index.vue";
+
 </script>
 
 <template>
