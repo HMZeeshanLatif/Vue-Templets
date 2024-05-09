@@ -5,11 +5,21 @@ const multiple = {
   class: "testClass",
   style: "background-color:aqua",
 };
+  let test="Properties";
+  const reversedTest = test.split('').reverse().join('');
+  console.log(test.split('')[0])
 </script>
 <template>
+
+  <h1>
+         {{
+              test.split('').reverse().join()
+         }}
+  </h1>
   <h1 v-bind="multiple" v-for="(item, index) in numbers" :key="index">
     {{ item>=+3?item:"" }}
     {{ index }}
+  
   </h1>
 </template>
 
