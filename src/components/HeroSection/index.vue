@@ -3,11 +3,9 @@
 
 </script>
 <template>
-  <h1>
-    <span v-for="(item, index) in numbers" :key="index">
-      {{ item }}
-      {{ index }}
-    </span>
+  <h1 v-for="(item,index) in numbers" :key="index">
+    {{item}}
+    {{index}}
   </h1>
 </template>
 
