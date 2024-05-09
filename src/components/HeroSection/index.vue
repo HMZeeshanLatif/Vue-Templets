@@ -1,5 +1,5 @@
 <script setup>
-const numbers = [1, 2, 3, 4, 5, 6];
+const numbers = [-3,-2,-1, 2, 3, 4, 5, 6];
 const multiple = {
   id: "testId",
   class: "testClass",
@@ -8,7 +8,7 @@ const multiple = {
 </script>
 <template>
   <h1 v-bind="multiple" v-for="(item, index) in numbers" :key="index">
-    {{ item }}
+    {{ item>=+3?item:"" }}
     {{ index }}
   </h1>
 </template>
