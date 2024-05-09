@@ -1,28 +1,23 @@
 <script setup>
-import {ref} from 'vue';
+import { ref } from 'vue';
 
-let testRef=ref(
-  {
-    firstNamme:"Zeeshan",
-    mailing:{
-      recipents:["Talha"],
-      Adress:"Karachi sindh Pakistan"
-    },
-    otherInfo:["26","Job","Early"]
-  }
-)
-let fun=()=>{
-  testRef.value.otherInfo.push("Busines")
-  testRef.value.otherInfo.push("Start")
-  testRef.value.recipent2="Arman"
-  testRef.value.mailing.recipents.push("Zeeshan")
-}
-
+const header = ref("Shopping List");
+let items = ref([
+  { id: 1, label: "10 part Hats" },
+  { id: 2, label: "2 board games" },
+  { id: 3, label: "20 cups" }
+]);
 </script>
+
 <template>
-   <h1>{{testRef.mailing.recipents[10]}}</h1>
-   <button @click="fun()">Click</button>
-   <button v-on:click="fun()">Click</button>
+  <div>
+    <h1>{{ header }}</h1>
+    <p v-for="({ id, label }) in items" :key="id">
+      {{ label }}
+    </p>
+  </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+/* Scoped styles go here */
+</style>
