@@ -7,6 +7,8 @@ let items = ref([
   { id: 2, label: "2 board games" },
   { id: 3, label: "20 cups" }
 ]);
+ let newItems=ref("");
+
 </script>
 
 <template>
@@ -16,6 +18,9 @@ let items = ref([
       {{ label }}
     </p>
   </div>
+<input type="text" id="inp" v-model="newItems">
+<label for="inp">{{newItems}}</label>
+
 </template>
 
 <style scoped>
