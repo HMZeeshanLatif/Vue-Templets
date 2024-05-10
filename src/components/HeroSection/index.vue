@@ -9,6 +9,7 @@ let items = ref([
 ]);
  let newItems=ref("");
 
+
 </script>
 
 <template>
@@ -18,7 +19,7 @@ let items = ref([
       {{ label }}
     </p>
   </div>
-<input type="text" id="inp" v-model="newItems">
+<input type="text" id="inp" v-model.number="newItems">
 <label for="inp">{{newItems}}</label>
 
 </template>
