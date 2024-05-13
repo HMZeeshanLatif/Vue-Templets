@@ -1,11 +1,13 @@
 <script setup>
 import {ref} from 'vue'
-const content = ref(true);
+const arr=ref(["Hello","World","In","Vue"])
+
 </script>
 
 <template>
-    <p v-show="content">Show</p>
-    <button @click="content= !content">Toogle</button>
+   <ul>
+   <li v-for="(sentence,index) in arr" :key="index">{{sentence}}</li>
+   </ul>  
 </template>
 
 <style scoped></style>
