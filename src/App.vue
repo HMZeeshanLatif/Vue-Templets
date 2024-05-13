@@ -1,28 +1,19 @@
-<script>
-import ResponsiveHeader from "./components/Responsiveheader/ResponsiveHeader.vue";
-import {ComponentOne,ComponentTwo,ComponentThree} from './components/Footerss/index.vue'
-import  Test from './components/TestCom/test.vue'
-
-export default {
-  name: 'App',
-  components: {
-    ResponsiveHeader,
-    Test,
-    ComponentOne,
-    ComponentTwo,
-    ComponentThree,
-  }
+<script setup>
+import {ref} from 'vue';
+const count=ref(0)
+const incr=()=>{
+  count.value++;
 }
+const dec=()=>{
+  count.value--;
+}
+
 </script>
 
 <template>
-  <div>
-    <ResponsiveHeader/>
-    <Test/>
-    <ComponentOne/>
-    <ComponentTwo/>
-    <ComponentThree my-prop="Hello from parent!"/> <!-- Pass prop to ComponentThree -->
-  </div>
+   <h1>{{count}}</h1>
+   <button @click="incr()">Incriment</button>
+   <button @click="dec()">Incriment</button>
 </template>
 
 <style scoped></style>

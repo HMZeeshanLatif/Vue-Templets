@@ -1,11 +1,21 @@
 <template>
-  <div>
-    
-  </div>
+ 
 </template>
 
 <script>
-import { defineComponent } from "vue";
+
+
+
+import { defineComponent,ref } from "vue";
+export default {
+  setup() {
+    const checkVIf = ref(6) // Define checkVIf as a ref
+
+    return {
+      checkVIf 
+    }
+  }
+}
 const ComponentOne = defineComponent({
   template: `
   <div>This is Component One</div>
@@ -16,9 +26,9 @@ const ComponentTwo = defineComponent({
   template: `<div>This is Component Two</div>`,
 });
 const ComponentThree = defineComponent({
-  template: `<div>I am Component Three with prop: {{ myProp }}</div>`,
+  template: `<div>I am Component Three with prop: {{ yProp }}</div>`,
   props: {
-    myProp: {
+    yProp: {
       type: String, // Define the type of the prop
     },
   },
