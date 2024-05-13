@@ -1,16 +1,11 @@
 <script setup>
-const isPass=false;
-const isNotPass=true; 
-const isFailed=false; 
-
-
+import {ref} from 'vue'
+const content = ref(true);
 </script>
 
 <template>
-  <p v-if="isPass">Get Degree</p>
-  <p v-else-if="isNotPass">Try again</p>
-  <p v-else>You Are fail</p>
-  
+    <p v-show="content">Show</p>
+    <button @click="content= !content">Toogle</button>
 </template>
 
 <style scoped></style>
