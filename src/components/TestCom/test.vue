@@ -1,16 +1,10 @@
 
 <script>
-export default{
-    name:'Test',
-    data(){
-        return {
-            message:"Hi i am component"
-        }
-    }
-}
+import {ref} from 'vue'
+ const  checkVIf=ref("Check")
 </script>
 <template>
-    <p>{{message}}</p>
+    <p v-if="checkVIf=='Check'">checkVIf</p>
 
 </template>
 <style>
