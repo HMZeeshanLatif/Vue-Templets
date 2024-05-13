@@ -1,15 +1,16 @@
 <script setup>
-import { ref, computed } from "vue";
+const isPass=false;
+const isNotPass=true; 
+const isFailed=false; 
 
-const number = ref(5);
-const ComputedNumber = computed(() => {
-  return number.value *  number.value
-});
+
 </script>
 
 <template>
-  <h1>{{ number }}</h1>
-  <h1>{{ComputedNumber}}</h1>
+  <p v-if="isPass">Get Degree</p>
+  <p v-else-if="isNotPass">Try again</p>
+  <p v-else>You Are fail</p>
+  
 </template>
 
 <style scoped></style>
