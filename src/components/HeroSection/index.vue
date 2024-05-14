@@ -1,5 +1,8 @@
 <script setup>
- const propos= defineProps(["firstName","lastName"])
+ const propos= defineProps({
+  firstName:String,
+  lastName:Number
+ })
 
 </script>
 
