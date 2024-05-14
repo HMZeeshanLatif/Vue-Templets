@@ -9,7 +9,7 @@ const arry=defineProps({
 <template>
 
 <h1 v-for="(items,index) in arry.ary" :key="index">{{items}}</h1>
-<h2>{{arry.obj["name"]}}</h2>
+<h2 v-for="(items,index) in arry.obj" :key="index">{{items}}</h2>
 
 
 </template>
