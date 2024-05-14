@@ -1,15 +1,12 @@
 <script setup>
 import { ref } from "vue";
 
-  
-
+const formDatas = ref({ userName: "" });
 </script>
 
 <template>
- 
- <div class="container">
-  <h1 v-for="number in 100" :key="number">{{number}}</h1>
- </div>
+  <input type="text" name="" id="" placeholder="Enter any text Here" v-model="formDatas.userName">
+  <h1>{{formDatas.userName}}</h1>
 </template>
 
 <style scoped></style>
