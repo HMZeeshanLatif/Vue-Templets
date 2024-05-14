@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from "vue";
+import HeroSection from './components/HeroSection/index.vue'
 
 const formDatas = ref({ userName: "", email: "", password: "" });
 </script>
@@ -32,6 +33,8 @@ const formDatas = ref({ userName: "", email: "", password: "" });
   <h1>{{ formDatas.userName }}</h1>
   <h1>{{ formDatas.email }}</h1>
   <h1>{{ formDatas.password }}</h1>
+  <HeroSection name="Zeeshan"/>
+  <HeroSection name="farhan"/>
 </template>
 
 <style scoped></style>
