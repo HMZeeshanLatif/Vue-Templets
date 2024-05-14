@@ -7,7 +7,7 @@ const lastname=ref("Latif")
 
 <template>
  
-  <HeroSection :ary="['Zeeeshan','Faizan','Arman']" :obj="{name:'Zeeshan',father:'Latif'}"/>
+  <HeroSection :ary="['Zeeeshan','Faizan','Arman']" :obj="{name:'Zeeshan',father:'Latiff'}"/>
 
 </template>
 
