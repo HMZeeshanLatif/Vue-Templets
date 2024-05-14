@@ -8,7 +8,7 @@ import { ref } from "vue";
 <template>
  
  <div class="container">
-  
+  <h1></h1>
  </div>
 </template>
 
