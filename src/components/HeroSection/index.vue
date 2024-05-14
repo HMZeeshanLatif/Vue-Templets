@@ -1,19 +1,26 @@
 <script setup>
-const arry=defineProps({
-  ary:Array,
-  obj:Object
-})
+
+methods: {
+  sendDataToParent() {
+    // Emitting an event named 'Datatopaernt' with the data
+    this.$emit("Datatopaernt", names);
+  }
+}
 
 </script>
 
 <template>
+  <form
+    @submit.prevent="$emit('userInfo', userName, ElementInternals, password)"
+  >
+    <input type="text" v-model="userName" />
+    <input type="email" v-model="email" />
+    <input type="password" v-model="password" />
+    <button type="submit">Submit</button>
+  </form>
 
-<h1 v-for="(items,index) in arry.ary" :key="index">{{items}}</h1>
-<h2 v-for="(items,index) in arry.obj" :key="index">{{items}}</h2>
-
-
+  <div v-bind="names">Hello I m child</div>
+  <button @click="sendDataToParent">Data</button>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

@@ -1,13 +1,21 @@
 <script setup>
 import { ref } from "vue";
 import HeroSection from './components/HeroSection/index.vue'
-const firstName=ref("Zeeshan")
-const lastname=ref("Latif")
+
+const formHandler=(userName,email,password)=>{
+  console.log(userName)
+  console.log(email)
+  console.log(password)
+}
+
+const getData=(names)=>{
+  console.log(names)
+}
 </script>
 
 <template>
  
-  <HeroSection :ary="['Zeeeshan','Faizan','Arman']" :obj="{name:'Zeeshan',father:'Latif',Phone:'15'}"/>
+  <HeroSection @Datatopaernt="getData"  @userInfo="formHandler"/>
 
 </template>
 
