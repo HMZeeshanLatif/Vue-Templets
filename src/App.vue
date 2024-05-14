@@ -7,8 +7,8 @@ const lastname=ref("Latif")
 
 <template>
  
-  <HeroSection :first-Name="firstName" :last-name="lastname"/>
-  <HeroSection />
+  <HeroSection :ary="['Zeeeshan','Faizan','Arman']" :obj="{name:'Zeeshan',father:'Latif'}"/>
+
 </template>
 
 <style scoped></style>
