@@ -1,11 +1,11 @@
 <script setup>
-defineProps(["student_father", "student_name", "student_age"]);
+ defineProps(["sName","sFather","sAge"])
 </script>
 
 <template>
-  <h1>{{student_age}}</h1>
-  <h1>{{student_name}}</h1>
-  <h1>{{student_father}}</h1>
+        <h1>Name: {{sName}}</h1> 
+        <h1>Father: {{sFather}}</h1> 
+        <h1>Age:{{sAge}}</h1>
 </template>
 
 <style scoped></style>
