@@ -1,21 +1,17 @@
 <script setup>
 import { ref } from "vue";
 import HeroSection from './components/HeroSection/index.vue'
+import slotComponentVue from "./components/slotComponent.vue";
 
-const formHandler=(userName,email,password)=>{
-  console.log(userName)
-  console.log(email)
-  console.log(password)
-}
 
-const getData=(names)=>{
-  console.log(names)
-}
+
 </script>
 
 <template>
  
-  <HeroSection @Datatopaernt="getData"  @userInfo="formHandler"/>
+  <slotComponentVue>
+      <h1>This is slot</h1>
+  </slotComponentVue>
 
 </template>
 
