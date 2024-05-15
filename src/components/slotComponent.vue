@@ -4,9 +4,9 @@
 </script>
 
 <template>
-    <slot>
-        <!-- <h1>FallBack component</h1> -->
-    </slot>
+  
+        <h1>FallBack component</h1>
+    
 </template>
 
 <style scoped></style>
