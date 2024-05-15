@@ -1,11 +1,16 @@
 <script setup>
-import { ref } from "vue";
+import { ref, provide } from "vue";
 import School from "./components/School.vue";
-
+provide("sName", "Zeeshan");
+provide("sAge" , "50");
+provide("sFather", "M Latif");
+provide("sClass", "Kg-1");
+provide("sSection","C");
 </script>
 
 <template>
-  <School sName="Zeeshan" sAge="50" sFather="M Latif" sClass="Kg-1" sSection="C"/>
+  <School />
 </template>
 
 <style scoped></style>
+

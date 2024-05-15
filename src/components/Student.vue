@@ -1,5 +1,7 @@
 <script setup>
- defineProps(["sName","sFather","sAge"])
+const sName=inject('sName')
+const sFather=inject('sFather')
+const sAge=inject('sAge')
 </script>
 
 <template>
