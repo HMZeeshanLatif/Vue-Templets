@@ -1,15 +1,19 @@
 <script setup>
 import { ref } from "vue";
-import FallbackComponent from "./components/FallbackComponents.vue";
-import HeroSection from "./components/HeroSection/index.vue";
-import slotComponentVue from "./components/slotComponent.vue";
+import School from "./components/School.vue";
+const userInfo = ref({
+  name: "Farhan",
+  father: "Rehan",
+  age: "24",
+});
 </script>
 
 <template>
-
-  <FallbackComponent>
-    <h1>If you remove me alternate text in FallbackComponents file under slot will appear </h1>
-  </FallbackComponent>
+  <School
+    :student_name="'Farhan'"
+    :student_father="'Rehan'"
+    :student_age="userInfo.age"
+  />
 </template>
 
 <style scoped></style>
