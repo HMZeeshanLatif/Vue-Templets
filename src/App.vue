@@ -1,15 +1,10 @@
 <script setup>
-import { ref, provide } from "vue";
-import School from "./components/School.vue";
-provide("sName", "Zeeshan");
-provide("sAge" , "50");
-provide("sFather", "M Latif");
-provide("sClass", "Kg-1");
-provide("sSection","C");
+import Swiper from './components/Swiper.vue'
+
 </script>
 
 <template>
-  <School />
+  <Swiper />
 </template>
 
 <style scoped></style>
