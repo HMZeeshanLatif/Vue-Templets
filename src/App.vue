@@ -1,10 +1,10 @@
 <script setup>
-import Swiper from './components/Swiper.vue'
+import LifeCycleHook from './components/LifeCycleHook.vue';
 
 </script>
 
 <template>
-  <Swiper />
+  <LifeCycleHook />
 </template>
 
 <style scoped></style>
