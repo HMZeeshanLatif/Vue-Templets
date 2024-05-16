@@ -9,34 +9,34 @@
         <img src="https://via.placeholder.com/300" alt="Slide 1" />
       </swiper-slide>
       <swiper-slide>
-        <img src="https://via.placeholder.com/300" alt="Slide 2" />
+        <img src="https://via.placeholder.com/302" alt="Slide 2" />
       </swiper-slide>
       <swiper-slide>
-        <img src="https://via.placeholder.com/300" alt="Slide 3" />
+        <img src="https://via.placeholder.com/304" alt="Slide 3" />
       </swiper-slide>
       <swiper-slide>
-        <img src="https://via.placeholder.com/300" alt="Slide 3" />
+        <img src="https://via.placeholder.com/306" alt="Slide 3" />
       </swiper-slide>
       <swiper-slide>
-        <img src="https://via.placeholder.com/300" alt="Slide 3" />
+        <img src="https://via.placeholder.com/308" alt="Slide 3" />
       </swiper-slide>
       <swiper-slide>
-        <img src="https://via.placeholder.com/300" alt="Slide 3" />
+        <img src="https://via.placeholder.com/310" alt="Slide 3" />
       </swiper-slide>
       <swiper-slide>
-        <img src="https://via.placeholder.com/300" alt="Slide 3" />
+        <img src="https://via.placeholder.com/312" alt="Slide 3" />
       </swiper-slide>
       <swiper-slide>
-        <img src="https://via.placeholder.com/300" alt="Slide 3" />
+        <img src="https://via.placeholder.com/314" alt="Slide 3" />
       </swiper-slide>
       <swiper-slide>
-        <img src="https://via.placeholder.com/300" alt="Slide 3" />
+        <img src="https://via.placeholder.com/316" alt="Slide 3" />
       </swiper-slide>
       <swiper-slide>
-        <img src="https://via.placeholder.com/300" alt="Slide 3" />
+        <img src="https://via.placeholder.com/318" alt="Slide 3" />
       </swiper-slide>
       <swiper-slide>
-        <img src="https://via.placeholder.com/300" alt="Slide 3" />
+        <img src="https://via.placeholder.com/320" alt="Slide 3" />
       </swiper-slide>
       <!-- Add more swiper-slide elements as needed -->
     </swiper>
