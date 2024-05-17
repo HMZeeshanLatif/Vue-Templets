@@ -1,10 +1,10 @@
 <script setup>
-import WatcherWithObj from './components/WatcherWithObj.vue'
+import WatchWithMultiple from './components/WatchWithMultiple.vue'
 
 </script>
 
 <template>
- <WatcherWithObj/>
+ <WatchWithMultiple/>
 </template>
 
 <style scoped></style>
