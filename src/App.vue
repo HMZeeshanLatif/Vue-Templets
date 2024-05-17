@@ -1,10 +1,10 @@
 <script setup>
-import WatchWithMultiple from './components/WatchWithMultiple.vue'
+import TempleteRef from './components/TempleteRef.vue'
 
 </script>
 
 <template>
- <WatchWithMultiple/>
+ <TempleteRef/>
 </template>
 
 <style scoped></style>
