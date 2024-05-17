@@ -1,10 +1,10 @@
 <script setup>
-import TempleteRef from './components/TempleteRef.vue'
+import AccessComponent from './components/AccessComponent.vue';
 
 </script>
 
 <template>
- <TempleteRef/>
+ <AccessComponent/>
 </template>
 
 <style scoped></style>
