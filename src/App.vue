@@ -1,10 +1,10 @@
 <script setup>
-import AccessComponent from './components/AccessComponent.vue';
+import useCountTest from './components/useCounTest.vue';
 
 </script>
 
 <template>
- <AccessComponent/>
+ <useCountTest/>
 </template>
 
 <style scoped></style>
