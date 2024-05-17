@@ -1,7 +1,7 @@
 <script setup>
 import { ref, watch } from "vue";
 const message = ref("This is message :");
-const inputText = ref("");
+const inputText = ref("This is message :");
 watch(inputText,(newValue,oldValue)=>{
     message.value=`i am Typing ${newValue}`
 })
@@ -13,3 +13,4 @@ watch(inputText,(newValue,oldValue)=>{
   </div>
 </template>
 <style scoped></style>
+ 
