@@ -1,10 +1,10 @@
 <script setup>
-import useCountTest from './components/useCounTest.vue';
+import CustomDirective from './components/CustomDirective.vue'
 
 </script>
 
 <template>
- <useCountTest/>
+ <CustomDirective/>
 </template>
 
 <style scoped></style>
